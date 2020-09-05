@@ -25,7 +25,7 @@ public class StepRotator : Singleton<StepRotator>, IDragHandler
         if (!IsRotationEnabled) return;
         RotateStep(eventData.delta);
 
-        pivotBody.AddForce(new Vector3(eventData.delta.x, 0, eventData.delta.y) * 0.005f, ForceMode.Impulse);
+        pivotBody.AddForce(new Vector3(eventData.delta.x, 0, eventData.delta.y) * 0.03f, ForceMode.Impulse);
     }
 
     private void RotateStep(Vector2 delta)
