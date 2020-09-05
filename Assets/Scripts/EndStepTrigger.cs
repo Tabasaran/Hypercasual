@@ -18,7 +18,7 @@ public class EndStepTrigger : MonoBehaviour
     
     private void EndStep()
     {
-        Vector3 nextStepPosition = transform.position + Vector3.down * 10;
+        Vector3 nextStepPosition = transform.position + Vector3.down * 15;
         StepController.GetInstance().BeginStepTransition(nextStepPosition);
     }
 }
